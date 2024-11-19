@@ -1,0 +1,446 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #403f3f 16.62%, #0a0706 85.61%);
+}
+
+.cabeçalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px;
+}
+
+.imagem-cabeçalho {
+
+    width: 200px;
+    height: 130px;
+}
+
+.cabeçalho-menu {
+
+    display: flex;
+    gap: 40px;
+}
+
+.cabeçalho-menu-item {
+
+    font-family: 'Sarala', sans-serif;
+    font-weight: 700;  /* Tornar o texto mais forte */
+    font-size: 15px;   /* Aumentar o tamanho da fonte */
+    color: #fffffd;    /* Cor mais vibrante, dourado, por exemplo */
+    text-transform: uppercase; /* Tornar o texto em maiúsculas */
+    text-transform: uppercase; /* Tornar o texto em maiúsculas */
+    letter-spacing: 1px; /* Espaçamento entre as letras para mais destaque */
+    transition: all 0.3s ease-in-out; /* Transição suave ao passar o mouse */
+}
+
+
+/* Efeito de hover */
+.cabeçalho-menu-item:hover {
+    color: #FFF;  /* Cor branca ao passar o mouse */
+    text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.8); /* Sombra dourada no texto */
+    transform: scale(1.1);  /* Aumenta o tamanho do texto ao passar o mouse */
+}
+
+-- CENTRO --
+
+.conteudo {
+
+    margin-bottom: 40px;
+    border-top: 0.4px solid #FFF2E7;
+    border-top: 0.5px solid #FFF2E7;
+}
+
+.conteudo-principal {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 0.5px solid #FFF2E7;
+}
+
+.conteudo-principal-escrito {
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-escrito-titulo {
+
+    font-family: 'righteous', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color:#fffefd;
+    margin-top: 40px;
+    margin-inline-start: 25px;
+    text-align: center;
+    
+ 
+}
+
+.logotipo {
+
+    width: 300px; /* Define a largura da imagem */
+    border: 5px solid #000; /* Adiciona uma borda preta de 5 pixels */
+    background-color: #2a2928;
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra */
+    margin-bottom: 30px;
+    margin-top: 30px;
+   
+}
+.img {
+
+    display: flex;
+    justify-content: center; 
+}
+
+.conteudo-principal-escrito-subtitulo {
+
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ECD6C4;
+   
+}
+
+
+.rodape {
+    padding: 0px;
+    border-top: 0.4px solid #FFF2E7;
+    gap: 0px;
+}
+
+.rodape-imagem {
+    height: 150px;
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+    .conteudo-terceiro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 25px;
+    border-top: 0.8px solid #FFF2E7;
+    margin-bottom: 16px;
+    margin-top: 50px;
+    align-items: center;
+    row-gap: 50px;
+}
+
+.container {
+
+    border-top: 0.8px solid #FFF2E7;
+    display: flex;
+    justify-content: space-around; /* Espaçamento igual entre os botões */
+    align-items: center;
+    width: 100%; /* Largura do contêiner */
+    gap: 0px;
+    margin-top: 30px;
+    margin-right: 100;
+   
+}
+
+.botao1 {
+    padding: 10px 20px;            /* Espaçamento interno */
+    font-size: 16px;               /* Tamanho da fonte */
+    color: rgb(10, 8, 8);                  /* Cor do texto */
+    background-color: white; /* Fundo transparente */
+    border: 2px solid white;       /* Borda branca */
+    border-radius: 15px;            /* Bordas arredondadas */
+    text-decoration: none;          /* Remove sublinhado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
+    margin-top: 30px;
+    font-family: 'righteous', cursive;
+    font-weight: 40px;
+    font-size: 30px;
+}
+
+.botao1:hover {
+    background-color: white; /* Fundo branco ao passar o mouse */
+    color: black;            /* Texto preto ao passar o mouse */
+}
+        
+
+
+        
+        .chat-container {
+            width: 1514px;
+            max-width: 100%;
+            background-color: rgba(29, 27, 26, 0.53);
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+            border-top: 0.8px solid #FFF2E7;
+        }
+        
+        .chat-box {
+            flex: 1;
+            padding: 10px;
+            overflow-y: auto;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .input-container {
+            display: flex;
+            padding: 10px;
+        }
+        
+        input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .botao {
+            padding: 10px;
+            background-color:white;
+            color: black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        
+        .botao1:hover {
+            background-color: rgb(22, 10, 10); /* Fundo branco ao passar o mouse */
+            color: rgb(230, 225, 225);            /* Texto preto ao passar o mouse */
+        }
+
+        #load-more {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: rgba(36, 25, 16, 0.53);
+            color: white
+        }
+        
+        #load-more:hover {
+            background-color: #cdd2ce
+        }
+
+
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            gap: 20px;
+        }
+        
+        .custom-button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #e3a323;
+            color: rgb(30, 24, 24);
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .custom-button:hover {
+            background-color: #0056b3;
+        }
+
+        .sinopse {
+           
+            text-align: center; /* Centraliza o texto horizontalmente */
+            font-size: 20px; /* Tamanho da fonte */
+            margin: 0;
+            color: white;
+            margin-left: 100px;
+            margin-right: 100px;
+            font-family: 'Times New Roman', serif;
+           
+
+           
+
+           
+        }
+
+         .poem {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px 40px;
+            align-self: flex-start 100px;
+            margin-left: 100px;
+            margin-right: 100px;
+            font-family: 'Playfair Display', serif;
+            margin-top: 30px;
+
+         }
+
+
+         .poema{
+            border-top: 2px solid #FFF2E7;
+            margin-top: 40px;
+         }
+
+         
+             .texto1 {
+               
+                    width: 200px;            /* Define a largura do quadrado */
+                    height: 200px;           /* Define a altura do quadrado */
+                    background: linear-gradient(68.15deg, #061ef6 3.00%, #c13a05 97.00%);
+                    border: 2px solid rgb(252, 247, 247); /* Define a borda preta com 2px de espessura */
+                    display: flex;           /* Utiliza flexbox para centralizar o conteúdo */
+                    align-items: center;     /* Centraliza verticalmente */
+                    justify-content: center; /* Centraliza horizontalmente */
+                    color: rgb(14, 13, 13);            /* Define a cor do texto como branco */
+                    font-size: 20px;         /* Define o tamanho da fonte */
+                    color: white;
+                   
+
+                  }
+                  
+                  .texto2 {
+
+                   
+                    width: 200px;            /* Define a largura do quadrado */
+                    height: 200px;           /* Define a altura do quadrado */
+                    background: linear-gradient(68.15deg, #061ef6 3.00%, #c13a05 97.00%);
+                    border: 2px solid rgb(252, 247, 247); /* Define a borda preta com 2px de espessura */
+                    display: flex;           /* Utiliza flexbox para centralizar o conteúdo */
+                    align-items: center;     /* Centraliza verticalmente */
+                    justify-content: center; /* Centraliza horizontalmente */
+                    color: rgb(14, 13, 13);            /* Define a cor do texto como branco */
+                    font-size: 20px;         /* Define o tamanho da fonte */
+                    color: white;
+                  }
+
+                  .texto3 {
+               
+                    width: 200px;            /* Define a largura do quadrado */
+                    height: 200px;           /* Define a altura do quadrado */
+                    background: linear-gradient(68.15deg, #061ef6 3.00%, #c13a05 97.00%);
+                    border: 2px solid rgb(252, 247, 247); /* Define a borda preta com 2px de espessura */
+                    display: flex;           /* Utiliza flexbox para centralizar o conteúdo */
+                    align-items: center;     /* Centraliza verticalmente */
+                    justify-content: center; /* Centraliza horizontalmente */
+                    color: rgb(14, 13, 13);            /* Define a cor do texto como branco */
+                    font-size: 20px;         /* Define o tamanho da fonte */
+                    color: white;
+                   
+                  }
+
+                  .texto4 {
+               
+                    width: 200px;            /* Define a largura do quadrado */
+                    height: 200px;           /* Define a altura do quadrado */
+                    background: linear-gradient(68.15deg, #061ef6 3.00%, #c13a05 97.00%);
+                    border: 2px solid rgb(252, 247, 247); /* Define a borda preta com 2px de espessura */
+                    display: flex;           /* Utiliza flexbox para centralizar o conteúdo */
+                    align-items: center;     /* Centraliza verticalmente */
+                    justify-content: center; /* Centraliza horizontalmente */
+                    color: rgb(14, 13, 13);            /* Define a cor do texto como branco */
+                    font-size: 20px;         /* Define o tamanho da fonte */
+                    color: white;
+                  }
+                  .texto5 {
+               
+                    width: 200px;            /* Define a largura do quadrado */
+                    height: 200px;           /* Define a altura do quadrado */
+                    background: linear-gradient(68.15deg, #061ef6 3.00%, #c13a05 97.00%);
+                    border: 2px solid rgb(252, 247, 247); /* Define a borda preta com 2px de espessura */
+                    display: flex;           /* Utiliza flexbox para centralizar o conteúdo */
+                    align-items: center;     /* Centraliza verticalmente */
+                    justify-content: center; /* Centraliza horizontalmente */
+                    color: rgb(14, 13, 13);            /* Define a cor do texto como branco */
+                    font-size: 20px;         /* Define o tamanho da fonte */
+                    color: white;
+                  }
+                  .texto6 {
+               
+                    width: 200px;            /* Define a largura do quadrado */
+                    height: 200px;           /* Define a altura do quadrado */
+                    background: linear-gradient(68.15deg, #061ef6 3.00%, #c13a05 97.00%);
+            
+                    border: 2px solid rgb(252, 247, 247); /* Define a borda preta com 2px de espessura */
+                    display: flex;           /* Utiliza flexbox para centralizar o conteúdo */
+                    align-items: center;     /* Centraliza verticalmente */
+                    justify-content: center; /* Centraliza horizontalmente */
+                    color: rgb(14, 13, 13);            /* Define a cor do texto como branco */
+                    font-size: 20px;         /* Define o tamanho da fonte */
+                    color: white;
+                  }
+                  .texto7 {
+               
+                    width: 200px;            /* Define a largura do quadrado */
+                    height: 200px;           /* Define a altura do quadrado */
+                    background: linear-gradient(68.15deg, #061ef6 3.00%, #c13a05 97.00%);
+                    border: 2px solid rgb(252, 247, 247); /* Define a borda preta com 2px de espessura */
+                    display: flex;           /* Utiliza flexbox para centralizar o conteúdo */
+                    align-items: center;     /* Centraliza verticalmente */
+                    justify-content: center; /* Centraliza horizontalmente */
+                    color: rgb(14, 13, 13);            /* Define a cor do texto como branco */
+                    font-size: 20px;         /* Define o tamanho da fonte */
+                    color: white;
+                  }
+                  .texto8 {
+               
+                    width: 200px;            /* Define a largura do quadrado */
+                    height: 200px;           /* Define a altura do quadrado */
+                    background: linear-gradient(68.15deg, #061ef6 3.00%, #c13a05 97.00%);
+                    border: 2px solid rgb(252, 247, 247); /* Define a borda preta com 2px de espessura */
+                    display: flex;           /* Utiliza flexbox para centralizar o conteúdo */
+                    align-items: center;     /* Centraliza verticalmente */
+                    justify-content: center; /* Centraliza horizontalmente */
+                    color: rgb(14, 13, 13);            /* Define a cor do texto como branco */
+                    font-size: 20px;         /* Define o tamanho da fonte */
+                    ;
+                    color: white;
+                  }
+                  .texto9 {
+               
+                    width: 200px;            /* Define a largura do quadrado */
+                    height: 200px;           /* Define a altura do quadrado */
+                    background: linear-gradient(68.15deg, #061ef6 3.00%, #c13a05 97.00%);
+                    border: 2px solid rgb(252, 247, 247); /* Define a borda preta com 2px de espessura */
+                    display: flex;           /* Utiliza flexbox para centralizar o conteúdo */
+                    align-items: center;     /* Centraliza verticalmente */
+                    justify-content: center; /* Centraliza horizontalmente */
+                    color: rgb(14, 13, 13);            /* Define a cor do texto como branco */
+                    font-size: 20px;         /* Define o tamanho da fonte */
+                    color: white;
+                  }
+                  .texto10 {
+               
+                    width: 200px;            /* Define a largura do quadrado */
+                    height: 200px;           /* Define a altura do quadrado */
+                    background: linear-gradient(68.15deg, #061ef6 3.00%, #c13a05 97.00%);
+                    border: 2px solid rgb(252, 247, 247); /* Define a borda preta com 2px de espessura */
+                    display: flex;           /* Utiliza flexbox para centralizar o conteúdo */
+                    align-items: center;     /* Centraliza verticalmente */
+                    justify-content: center; /* Centraliza horizontalmente */
+                    color: rgb(14, 13, 13);            /* Define a cor do texto como branco */
+                    font-size: 20px;         /* Define o tamanho da fonte */
+                    color: white;
+                  }
+
+       
+
+                   
+           
+             
+               
+
+                
